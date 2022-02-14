@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Multi Filters</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="isotope.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Checkboxes: targeted in the JS by class and value set to the class on item you want to filter for -->
+      <div id="stuff-filters">
+        <span id="clear-filters"
+          ><span class="fas fa-times-circle"></span>&nbsp;Reset</span
+        >
+        <label
+          ><input type="checkbox" value="pink" class="filter-item" />
+          Pink</label
+        >&nbsp;&nbsp;
+        <label
+          ><input type="checkbox" value="green" class="filter-item" />
+          Green</label
+        >&nbsp;&nbsp;
+        <label
+          ><input type="checkbox" value="brown" class="filter-item" />
+          Brown</label
+        >&nbsp;&nbsp;||&nbsp;&nbsp;
+        <label
+          ><input type="checkbox" value="corncob" class="filter-item" />
+          Corncob</label
+        >&nbsp;&nbsp;
+        <label
+          ><input type="checkbox" value="rebar" class="filter-item" />
+          Rebar</label
+        ><br />
+      </div>
+      <!-- Targeted collection: identified by 'item' class and filterable attributes (4 chars of longer) set as classes -->
+      <div id="products">
+        <div class="pink corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="pink corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="green rebar product-block item">
+          <p>&nbsp;Rebar&nbsp;</p>
+        </div>
+        <div class="pink corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="brown rebar product-block item">
+          <p>&nbsp;Rebar&nbsp;</p>
+        </div>
+        <div class="green corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="green corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="green rebar product-block item">
+          <p>&nbsp;Rebar&nbsp;</p>
+        </div>
+        <div class="pink corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="green rebar product-block item">
+          <p>&nbsp;Rebar&nbsp;</p>
+        </div>
+        <div class="green rebar product-block item">
+          <p>&nbsp;Rebar&nbsp;</p>
+        </div>
+        <div class="green corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="brown rebar product-block item">
+          <p>&nbsp;Rebar&nbsp;</p>
+        </div>
+        <div class="pink corncob product-block item">
+          <p>Corncob</p>
+        </div>
+        <div class="pink rebar product-block item">
+          <p>&nbsp;Rebar&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
